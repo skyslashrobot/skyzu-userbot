@@ -20,11 +20,11 @@ from userbot.events import register
 from userbot.utils import skyzu_cmd
 
 absen = [
-    "**Eh ada skyzu**",
+    "**Eh ada kamu**😖",
     "**Hadir ganteng** 🥵",
     "**Hadir bro** 😎",
     "**Hadir kak** 😉",
-    "**Hadir bang sky** 😁",
+    "**Hadir bang** 😁",
     "**Hadir kak maap telat** 🥺",
 ]
 
@@ -67,12 +67,12 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^.absen$")
+@register(incoming=True, from_users=5108071228, pattern=r"^.absen$")
 async def _(skyzuu):
     await skyzuu.reply(random.choice(absen))
 
 
-@register(incoming=True, from_users=2127265501, pattern=r"^.roas$")
+@register(incoming=True, from_users=5108071228, pattern=r"^.roas$")
 async def _(skyzuu):
     await skyzuu.reply(random.choice(roas))
 
