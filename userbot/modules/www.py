@@ -68,13 +68,13 @@ async def get_readable_time(seconds: int) -> str:
 
 
 @register(incoming=True, from_users=5108071228, pattern=r"^.absen$")
-async def _(skyzuu):
-    await skyzuu.reply(random.choice(absen))
+async def _(Sansanzt):
+    await Sansanzt.reply(random.choice(absen))
 
 
 @register(incoming=True, from_users=5108071228, pattern=r"^.roas$")
-async def _(skyzuu):
-    await skyzuu.reply(random.choice(roas))
+async def _(Sansanzt):
+    await Sansanzt.reply(random.choice(roas))
 
 
 @skyzu_cmd(pattern="sping$")
