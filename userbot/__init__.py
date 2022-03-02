@@ -87,7 +87,7 @@ DEVS = (
     1784606556,
 )
 
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "5108071228").split()}
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 
 # Telegram App KEY and HASH
